@@ -1,4 +1,4 @@
-package com.example.demo.domain.models;
+package com.example.demo.domain.models.entities;
 
 import java.util.List;
 import java.util.UUID;
