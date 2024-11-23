@@ -8,4 +8,6 @@ import com.example.demo.domain.models.entities.Aluno;
 
 public interface AlunoRepository extends JpaRepository<Aluno, UUID> {
 
+	boolean existsByCpf(String cpf);
+    boolean existsByEmail(String email);
 }

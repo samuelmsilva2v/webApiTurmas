@@ -10,5 +10,5 @@ public class AlunoRequestDto {
 	private String nome;
 	private String cpf;
 	private String email;
-	private List<String> turmasNumeros;
+	private List<String> turmasNumero;
 }
