@@ -1,6 +1,7 @@
 package com.example.demo.domain.models.dtos;
 
 import java.util.List;
+import java.util.UUID;
 
 import lombok.Data;
 
@@ -10,5 +11,5 @@ public class AlunoRequestDto {
 	private String nome;
 	private String cpf;
 	private String email;
-	private List<String> turmasNumero;
+	private List<UUID> turmasIds;
 }

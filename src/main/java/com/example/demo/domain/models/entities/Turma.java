@@ -1,5 +1,6 @@
 package com.example.demo.domain.models.entities;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -25,5 +26,5 @@ public class Turma {
 	private Integer anoLetivo;
 
 	@ManyToMany(mappedBy = "turmas")
-	private List<Aluno> alunos;	
+    private List<Aluno> alunos = new ArrayList<>();
 }

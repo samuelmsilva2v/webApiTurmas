@@ -57,7 +57,7 @@ public class TurmaDomainServiceImpl implements TurmaDomainService {
 	@Override
 	public List<TurmaResponseDto> listar() {
 		
-		return turmaRepository.findAll().stream().map(cliente -> modelMapper.map(cliente, TurmaResponseDto.class))
+		return turmaRepository.findAll().stream().map(turma -> modelMapper.map(turma, TurmaResponseDto.class))
 				.collect(Collectors.toList());
 	}
 

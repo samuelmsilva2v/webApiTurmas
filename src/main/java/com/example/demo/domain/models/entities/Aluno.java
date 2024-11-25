@@ -1,5 +1,6 @@
 package com.example.demo.domain.models.entities;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -28,5 +29,5 @@ public class Aluno {
 	private String email;
 	
 	@ManyToMany
-    private List<Turma> turmas;
+	private List<Turma> turmas = new ArrayList<>();	
 }
